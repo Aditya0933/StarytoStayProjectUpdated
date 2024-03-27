@@ -1,0 +1,466 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family:  "Poppins", cursive;
+    margin: 0;
+}
+
+*{
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+.navBtn:hover{
+  font-weight:700;
+  position: relative;
+  top:-2px;
+  cursor:pointer;
+}
+
+.navbg{
+  background: 'transparent';
+  box-shadow: 'none';
+}
+
+
+  .active-link {
+    position: relative;
+  }
+  
+  .active-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -10px; 
+    width: 100%; 
+    height: 4px; 
+    border-radius: 4px ;
+    background-color:  #ff8a00;
+  }
+
+  .active-link-type {
+    position: relative;
+  }
+  
+  .active-link-type::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left:0;
+    width: 100%; 
+    height: 4px; 
+    border-radius: 4px ;
+    background-color:  #ff8a00;
+  }
+
+
+/* sx={{textAlign:'center',backgroundColor:'grey',height:'100%',justifyContent:'center', display:'flex',width:'5rem'}} */
+.petType{
+  padding: 10px ;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+/* .card:hover {
+  transform: scale(1.02);
+  transition: transform .2s ease;
+} */
+
+.cardImg{
+  transition: transform .3s ease-out;
+}
+
+.cardImg:hover{
+  transform: scale(1.1);
+  transition: transform .3s ease-in;
+}
+
+.my_profile_user-img {
+  border-radius: 100%;
+  border: 1px solid rgb(253, 253, 252);
+}
+
+
+
+
+
+/* body {
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+} */
+
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.register {
+    max-width: 878px;
+    width: 90vw;
+    display: flex;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.register span {
+    color: #adb5bd;
+}
+
+.main-heading{
+    font-size: 24px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.main-heading::after{
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 80px;
+    background-color: #003049;
+    bottom: -10px;
+    right: 121px;
+}
+
+#form {
+    max-width: 320px;
+    width: 90vw;
+    margin: 2em auto;
+}
+
+#form > input, #form > select, .btn {
+    border: 1px solid #e9ecef;
+    padding: .9em 1em;
+}
+
+#form > input:focus, #form > select:focus {
+    outline: none;
+}
+
+#form > .btn {
+    background-color: #003049;
+    color: #e9ecef;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#form > select {
+    color: #636970; /* Adjusted text color */
+    background-color: #fff; /* Adjusted background color */
+}
+
+.flex {
+    display: flex;
+    gap: 1em;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.register .col-1 {
+    margin: auto;
+    padding: 2em 0;
+}
+
+.register .col-2 img {
+    width: 480px;
+    height: 100%;
+    object-fit: cover;
+    align-self: flex-end;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: none;
+}
+
+@media screen and (min-width: 860px) {
+    .register .col-2 img {
+        display: initial;
+    }
+}
+
+/* Sign Form */
+
+.checkbox{
+    display: flex;
+    justify-content: space-between;
+    color: #636970; /* Adjusted text color */
+    font-size: 14px;
+}
+
+.remember{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.or{
+    position: relative;
+    display: inline-block;
+    margin: 20px 0;
+
+}
+.or::before{
+    display: block;
+    content: "";
+    height: 2px;
+    width: 100px;
+    background-color: #636970;
+    border-radius: 4px;
+    position: absolute;
+    right: 35px;
+    top: 40%;
+}
+.or::after{
+    right: 0;
+    content: "";
+    height: 2px;
+    width: 100px;
+    background-color: #636970;
+    border-radius: 4px;
+    position: absolute;
+    top: 40%;
+    left: 35px;
+}
+.googleSign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #636970;
+}
+
+
+/**********************************************/
+
+.rescue-btn{
+  background-color: #ff6d00;
+  color: #ffffff;
+  font-size: 24px;
+  padding: 14px 16px!important;
+  margin-top: 20px;
+  border-radius: 30px!important;
+  border: 2px solid #ff6d00;
+  transition: .2s all linear;
+  font-weight: 800;
+}
+.rescue-btn:hover{
+  background-color: transparent!important;
+  color: #ff6d00;
+}
+
+.rescue-content{
+  padding: 50px 0;
+}
+.rescue-content-heading{
+  font-size: 42px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.rescue-content-para{
+  text-align: center;
+  color: #fff;
+  padding: 20px 20px;
+  line-height: 1.7;
+  letter-spacing: .5px;
+}
+
+/* Accordian Section */
+
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2.5rem;
+}
+
+.accordion {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+.accordion-item {
+  background-color: #fff;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+
+
+/* ----------------================= */
+    /* pagination */
+
+    .pagination {
+      display: flex;
+      list-style: none;
+      cursor: pointer;
+    }
+
+    .pagination_table {
+      display: flex;
+      list-style: none;
+      cursor: pointer;
+    }
+    
+    .pagination a {
+      padding: 8px;
+      display: flex;
+      justify-content: center;
+      min-width:40px;
+      border-radius: 5px;
+      border: 1px solid #ff6d00;
+      color: #ff6d00;
+    }
+
+    .pagination_table a {
+      padding: 8px;
+      display: flex;
+      justify-content: center;
+      min-width:40px;
+      border-radius: 5px;
+      border: 1px solid #004cff;
+      color: #004cff;
+      border-radius: 20px;
+    }
+    
+    .pagination__link {
+      font-weight: bold;
+    }
+    
+    .pagination__link--active a {
+      color: #fff;
+      background: #ff6d00;
+    }
+
+    .pagination__link_table--active a {
+      color: #fff;
+      background: #004cff;
+    }
+    
+    .pagination__link--disabled a {
+      color: rgb(222, 197, 157);
+      border: 1px solid rgb(145, 125, 104);
+    }
+
+    .pagination__link_table--disabled a {
+      color: rgb(157, 157, 222);
+      border: 1px solid rgb(104, 109, 145);
+    }
+    
+
+
+
+    /* ******************************************* */
+    /* contact form */
+
+
+    .form-heading{
+      font-size: 32px;
+      line-height: 1.5;
+      color: #ff6d00;
+      font-weight: 800;
+      text-align: center;
+      position: relative;
+  }
+  .form-heading::after{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: inline-block;
+      content: "";
+      height: 5px;
+      width: 100px;
+      bottom: 0px;
+      margin-top: 40px;
+      background-color:#ff6d00;
+  }
+  .contact-inputs{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding:50px 0;
+  }
+  .contact-inputs input{
+      padding: 20px;
+      border: 2px solid #ff6d00;
+      border-radius: 10px;
+      max-width: 500px;
+      width: 60%;
+  }
+  .contact-inputs input::placeholder{
+      font-size: 20px;
+      color: #ff6d00;
+  }
+  .contact-inputs textarea{
+      padding: 20px;
+      border: 2px solid #ff6d00;
+      border-radius: 10px;
+      max-width: 500px;
+      width: 60%;
+  }
+  .contact-inputs textarea::placeholder{
+      font-size: 22px;
+      color: #ff6d00;
+  }
+
+  .contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+.contact-form{
+    text-align: center;
+}
+

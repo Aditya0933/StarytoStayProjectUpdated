@@ -1,0 +1,30 @@
+.btn-1{
+    color: white;
+    background: #d97500;
+    border: none;
+    border: 2px solid #d97500;
+    padding: 15px 18px 15px 18px;
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 2;
+    letter-spacing: .7px;
+
+}
+.btn-1:hover{
+    background: transparent;
+    border: 2px solid #d97500;
+    transform: scale(1);
+}
+.btn-2{
+    border: 2px solid #d97500;
+    background: transparent;
+    padding: 15px 18px 15px 18px;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 2;
+    letter-spacing: .7px;
+}
+.btn-2:hover{
+    background:#d97500;
+    transform: scale(1);
+}

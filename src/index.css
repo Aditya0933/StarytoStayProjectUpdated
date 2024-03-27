@@ -1,0 +1,114 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+:root {
+  --primary-dark: #5651e5;
+  --primary-light: #709dff;
+  --heading-bottom: #ffb300;
+}
+
+.icon {
+  color: var(--primary-dark);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    @apply font-[Poppins]
+  }
+
+  li {
+    @apply p-4
+  }
+
+  h1 {
+    @apply relative text-3xl md:text-4xl font-bold mb-16
+  }
+  h1::after{
+    @apply absolute content-[''] bg-[var(--heading-bottom)] h-[3px] w-[100%] left-0 -bottom-[14px] rounded-xl 
+  }
+
+  h2 {
+    @apply text-3xl font-bold
+  }
+
+  h3 {
+    @apply text-xl font-bold
+  }
+
+  button {
+    @apply p-3 border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white rounded-md transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg
+  }
+
+  .icon {
+    @apply text-2xl cursor-pointer
+  }
+
+  /* Hover effect for images */
+  .dog-image:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Add these styles to your CSS */
+.dog-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dog-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dog-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.dog-card:hover .dog-overlay {
+  opacity: 1;
+}
+/* Destinations.css */
+
+.destinations-image {
+  transition: opacity 0.3s ease;
+}
+
+.destinations-image:hover {
+  opacity: 0.75;
+}
+
+
+
+
+.hue-rotate-120 {
+  filter: hue-rotate(120deg);
+}
+
+
+/* Stories Section */
+.hide-scroll-bar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}

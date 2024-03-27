@@ -1,0 +1,53 @@
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    animation: slideDown 0.5s;
+    background-color: black; /* Change background color to black */
+    z-index: 1000;
+    /* Add more styles here if needed */
+  }
+  .music-button {
+    background-color: transparent;
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px; /* Adjust the margin as needed */
+    /* Add more styles here if needed */
+  }
+  
+  .playing {
+    color: green; /* Apply a different color when music is playing */
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  .hidden {
+    animation: slideUp 0.5s;
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-100%);
+    }
+  }
+  
+  .website-name {
+    color: white; /* Change text color to black */
+  }
+  .md\\:flex.text-black li {
+    color: white;
+  }
