@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "homepage": "https://Ankitsahu640.github.io/StrayToStay-frontend",
+  "homepage": "https://Aditya0933.github.io/StarytoStayProjectUpdated",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,7 +13,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "esri-leaflet-geocoder": "^3.1.4",
-    "gh-pages": "^6.0.0",
+    "gh-pages": "^6.1.1",
     "google-map-react": "^2.2.1",
     "leaflet": "^1.9.4",
     "react": "^18.2.0",
